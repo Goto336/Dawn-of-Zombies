@@ -1,0 +1,73 @@
+body{
+    background-image: url("https://s.videogamer.com/meta/4f29/215e5ff2-ef88-49af-9de4-671e63cc3523_DyingLightBadBlood.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#sidebar {
+    border: 5px solid #e67e22;
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    float: right;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    opacity: 0.8;
+
+}
+
+#btn{
+    font-family: 'Gochi Hand', cursive;   
+    font-size: 40px;
+    border: groove 4px #e67e22;
+    border-radius:10px;
+}
+
+.gear{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    border: groove 4px #e67e22;
+    border-radius:10px;
+}
+
+.iptVal{
+    border: groove 4px #e67e22;
+    border-radius:10px;
+    
+}
+
+h1{
+    color: #ff3838;
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+h2{
+    font-family: 'VT323', monospace; 
+    color: #ff3838;
+}
+
+.fb{
+    color: #ff5252;  
+    font-family: 'Special Elite', cursive;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-family: 'VT323', monospace;  
+    font-size: 20px;
+}
