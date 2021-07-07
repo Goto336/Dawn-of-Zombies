@@ -1,87 +1,16 @@
-<!DOCTYPE html> <html><head>
+
+<!DOCTYPE html>
+<html>
+    <head>
         <title>Dawn of Zombies</title>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Gochi+Hand');
             @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Courgette|Dosis');
             @import url('https://fonts.googleapis.com/css?family=VT323');
             @import url('https://fonts.googleapis.com/css?family=Special+Elite');
-        </style>
-        
-        
-        
-    <style>body{
-    background-image: url("https://s.videogamer.com/meta/4f29/215e5ff2-ef88-49af-9de4-671e63cc3523_DyingLightBadBlood.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100%;
-    background-attachment: fixed;
-}
-
-#center{
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-}
-
-#sidebar {
-    border: 5px solid #e67e22;
-    border-radius: 10px;
-    width: 250px;
-    height: 400px;
-    background-color: white;
-    float: right;
-    text-align: center;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-    opacity: 0.8;
-
-}
-
-#btn{
-    font-family: 'Gochi Hand', cursive;   
-    font-size: 40px;
-    border: groove 4px #e67e22;
-    border-radius:10px;
-}
-
-.gear{
-    font-family: 'Architects Daughter', cursive;
-    font-size: 40px;
-    border: groove 4px #e67e22;
-    border-radius:10px;
-}
-
-.iptVal{
-    border: groove 4px #e67e22;
-    border-radius:10px;
-    
-}
-
-h1{
-    color: #ff3838;
-    text-align: center;
-    padding: 30px;
-    font-size: 50px;
-    font-family: 'Special Elite', cursive;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-
-h2{
-    font-family: 'VT323', monospace; 
-    color: #ff3838;
-}
-
-.fb{
-    color: #ff5252;  
-    font-family: 'Special Elite', cursive;
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-}
-
-p{
-    font-family: 'VT323', monospace;  
-    font-size: 20px;
-}</style></head>
+      </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
     
     <body>
     <h1>Dawn of Zombies</h1>
@@ -102,89 +31,7 @@ p{
             </select>
         </div>
     <p class="fb"></p>
-    
 
-<script>
-/*__POPCODESTART__*/
-var clothes = {
-    shirts: 5,
-    pants: 5,
-    shoes: 5,
-    jackets: 2,
-    hats: 3,
-    //function or "method" is here
-    
-    
-   calcStuff: function(a) {
-        return this.stuff = a + this.shirts;
-   }  
-    
-};
-
-console.log(clothes.calcStuff());
-
-//Helpful code?
-//document.getElementById(".fb").innerHTML = clothes.calcStuff();
-
-var food = {
-    water: 5,
-    steak: 15,
-    apple: 10,
-    juice: 4,
-    canSoup: 6,
-    //function or "method" is here
-    calcStuff: function(b) {
-        return this.stuff = b + this.water;
-    }
-};
-
-var weapons = {
-    knives: 5,
-    pistols: 1,
-    assaultRifles: ["Ak-47", "M16", "SCAR", "M4 Carbine", "Galil"],
-    Shotguns: 3,
-    extra: ["Crossbow", "Bow", "Shield", "Grenade"],
-    //function or "method" is here
-    calcStuff: function(c) {
-        return this.stuff = c + this.knives;
-    }
-};
-
-var drop;
-var dropVal;
-var ipt;
-document.getElementById('btn').addEventListener('click', function() {
-    ipt = document.querySelector(".iptVal").value;
-    //alert(ipt);
-    drop = document.querySelector(".gear");
-    dropVal = parseInt(drop.options[drop.selectedIndex].value);
-    console.log (dropVal);
-    
-    switch(dropVal){
-        //alert("You now have 6 shirts");
-        //document.querySelector(".fb").innerHTML = clothes + "You now have 6 shirts";
-        
-        case 1: document.querySelector(".fb").innerHTML = "You now have " + clothes.calcStuff(parseInt(ipt)) + " shirts";
-        break;
-        case 2: document.querySelector(".fb").innerHTML = "You have collected " + food.calcStuff(parseInt(ipt)) + " water bottles";
-        break;
-        case 3: document.querySelector(".fb").innerHTML = weapons.calcStuff(parseInt(ipt)) + " knives have been added to your arsenal";
-        break;
-        case 4: alert("Hi Donohue!");
-        break;
-        default: console.log("Raid failed. Zombies are surrounding you! Retreat!!! ");
-        
-    }
-    
-    switch(dropVal){
-        case 4: document.querySelector(".fb").innerHTML = " Done! But still gonna work on this and make it better!";
-        break;
-        }
-
-    
-});
-
-// HTML - input, dropdown, button
-// Objects created
-// getting values from input and from dropdown
-// add value to array cosmo.family- .push()</script></body></html>
+        <script src="script.js"></script>
+    </body>
+</html>
